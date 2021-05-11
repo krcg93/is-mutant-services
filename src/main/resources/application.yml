@@ -1,0 +1,33 @@
+micronaut:
+  application:
+    name: ${APPNAME}
+  router:
+    versioning:
+      enabled: true
+      default-version: 1
+      parameter:
+        enabled: true
+        names: 'v,api-version'
+      header:
+        enabled: true
+        names:
+          - 'X-API-VERSION'
+          - 'Accept-Version'
+      static-resources:
+        swagger:
+          paths: classpath:META-INF/swagger
+          mapping: /${micronaut.context-path}/swagger/**
+        swagger-ui:
+          paths: classpath:META-INF/swagger/views/swagger-ui
+          mapping: /${micronaut.context-path}/swagger-ui/**
+
+log:
+  application:
+    name: ${APPNAME}
+
+firebase:
+  path: ${PATHFIREBASE}
+
+  # SE DEBEN DEFINIR LAS SIGUIENTES VARIABLES DE ENTORNO (NUNCA QUEMAR CONFIGURACIONES)
+
+  #APPNAME=is-mutant-services;PATHFIREBASE=https://services-crud-default-rtdb.firebaseio.com/
