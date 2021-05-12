@@ -14,7 +14,7 @@
 
 - Con intellij idea, en el panel de gradle, pulsar is-mutant-services, expandir el menu de Tasks despues expandir application y ejecutar run.
 despues de ejecutar run, editar la configuracion y agregar en environment las variables de entorno, las variables de entorno estan en 
-application.yml estan al final del archivo comentadas
+application.yml estan al final del archivo comentadas. Cuando se ejecuten las pruebas unitarias, tambien se deben configurar las variables de entorno, editar la configuracion y agregar las mismas variables.
 
 - Con docker, ejecutar los siguientes comandos: ./gradlew build, docker build . -t mutants, docker run --rm -p 8080:8080 mutants
 
