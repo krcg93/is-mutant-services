@@ -12,7 +12,13 @@
 
 ## Ejecutar proyecto
 
--en gradle, services-crud, expandir el menu de Tasks despues expandir application y ejecutar run.
-despues de ejecutar run, editar la configuracion y agregar en environment variables las variables de entorno, las variables de entorno que estan en 
-application.yml estan al final del archivo comentadas 
+- En gradle, is-mutant-services, expandir el menu de Tasks despues expandir application y ejecutar run.
+despues de ejecutar run, editar la configuracion y agregar en environment las variables de entorno, las variables de entorno estan en 
+application.yml estan al final del archivo comentadas
 
+- Con docker, ejecutar los siguientes comandos: ./gradlew build, docker build . -t mutants, docker run --rm -p 8080:8080 mutants
+
+## Diseño
+- Arquitectura DDD
+- Implementacion de SOLID
+- Implementacion de Singleton, Factory, Visitor
