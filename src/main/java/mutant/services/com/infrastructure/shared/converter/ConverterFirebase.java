@@ -26,7 +26,7 @@ public class ConverterFirebase {
         });
         mutantsCountDto.setCountMutantDna(mutant.get());
         mutantsCountDto.setCountHumanDna(human.get());
-        mutantsCountDto.setRatio(mutant.get() / human.get());
+        mutantsCountDto.setRatio((double) (mutant.get() / human.get()));
         return mutantsCountDto;
     }
 }

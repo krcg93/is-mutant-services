@@ -1,5 +1,5 @@
 applicationType: default
-defaultPackage: services.crud
+defaultPackage: mutant.services.com
 testFramework: junit
 sourceLanguage: java
 buildTool: gradle

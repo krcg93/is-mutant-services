@@ -1,4 +1,3 @@
-#FROM adoptopenjdk/openjdk15:ubi
 FROM amazoncorretto:15
 COPY build/libs/is-mutant-services-*-all.jar is-mutant-services.jar
 EXPOSE 8080

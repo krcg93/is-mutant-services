@@ -3,7 +3,7 @@ package mutant.services.com.infrastructure.shared.dto;
 public class MutantsCountDto {
     private Integer countMutantDna;
     private Integer countHumanDna;
-    private Integer ratio;
+    private Double ratio;
 
     public Integer getCountMutantDna() {
         return countMutantDna;
@@ -21,11 +21,11 @@ public class MutantsCountDto {
         this.countHumanDna = countHumanDna;
     }
 
-    public Integer getRatio() {
+    public Double getRatio() {
         return ratio;
     }
 
-    public void setRatio(Integer ratio) {
+    public void setRatio(Double ratio) {
         this.ratio = ratio;
     }
 }
